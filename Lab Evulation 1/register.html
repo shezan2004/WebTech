@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechFlow - Register</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .sidebar {
+            width: 260px;
+            background-color:black;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h1 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        .nav-link {
+            padding: 15px;
+            margin: 5px 0;
+            text-decoration: none;
+            font-weight: 600;
+            color: #9ca3af;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .nav-link:hover {
+            background-color:black;
+            color:white;
+        }
+
+        .nav-link.active {
+            background-color:blue;
+            color: white;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            width: 380px;
+        }
+
+        .form-box h2 {
+            margin-bottom: 25px;
+            text-align: center;
+            color: black;
+        }
+
+        .field-group {
+            margin-bottom: 15px;
+        }
+
+        .field-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #374151;
+        }
+
+        .input-style {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .blue-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .blue-btn:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>TechFlow</h1>
+        <a href="login.html" class="nav-link">Log in</a>
+        <a href="register.html" class="nav-link active">Register</a>
+    </div>
+    <div class="container">
+        <div class="form-box">
+            <h2>Create account</h2>
+            <form>
+                <div class="field-group">
+                    <label>Email address</label>
+                    <input type="email" class="input-style" >
+                </div>
+                <div class="field-group">
+                    <label>Password</label>
+                    <input type="password" class="input-style" >
+                </div>
+                <div class="field-group">
+                    <label>Gender</label>
+                    <select class="input-style">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <button type="submit" class="blue-btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
